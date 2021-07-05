@@ -1,7 +1,4 @@
-<!--<clr-datagrid>-->
 <clr-datagrid [(clrDgSelected)]="selected">
-<!--<clr-datagrid (clrDgRefresh)="refresh($event)" [clrDgLoading]="loading">-->
-<!--<clr-datagrid (clrDgRefresh)="refresh($event)">-->
   <clr-dg-action-bar>
     <div class="btn-group">
       <button type="button" class="btn btn-sm btn-secondary" (click)="onDelete();">
@@ -15,7 +12,6 @@
   <clr-dg-column [clrDgField]="'creation'">Creation date</clr-dg-column>
   <clr-dg-column [clrDgField]="'color'">Favorite color</clr-dg-column>
 
-<!--  <clr-dg-row *clrDgItems="let deed of deeds" [clrDgItem]="deed" [(clrDgSelected)]="deed.selected">-->
   <clr-dg-row *clrDgItems="let deed of deeds" [clrDgItem]="deed">
     <clr-dg-cell>{{deed.id}}</clr-dg-cell>
     <clr-dg-cell>{{deed.name}}</clr-dg-cell>
