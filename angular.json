@@ -68,7 +68,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "scam-ui:build"
+            "browserTarget": "scam-ui:build",
+            "ssl": true
           },
           "configurations": {
             "production": {
